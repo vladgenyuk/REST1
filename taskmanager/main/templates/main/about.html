@@ -1,0 +1,27 @@
+{% extends 'main/base.html'%}
+
+{% block link %}
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.js" integrity="sha512-MNW6IbpNuZZ2VH9ngFhzh6cUt8L/0rSVa60F8L22K1H72ro4Ki3M/816eSDLnhICu7vwH/+/yb8oB3BtBLhMsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endblock %}
+
+{% block title%}
+страница про нас
+{% endblock %}
+
+{% block content%}
+<h1>ABOUT str</h1>
+    <p>TEXT</p>
+
+
+<div id="order_class">
+    <h2 style="background-color: #691ba6;" v-for="t in tasks">
+        Name: [[ t.title ]] <br>
+        Description: [[ t.task ]]<br>
+    </h2>
+</div>
+
+
+
+<script src='/static/js/app.js'></script>
+{% endblock %}
